@@ -37,4 +37,10 @@ public class Rental {
 
         return thisAmount;
     }
+
+    public int getFrequentRenterPoints() {
+        if (this.getDaysRented() > 1)
+            return 2;
+        return 1;
+    }
 }
